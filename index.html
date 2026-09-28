@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Rampally Neeraj Chary | AI/ML & Software Development</title>
+    <meta
+      name="title"
+      content="Rampally Neeraj Chary | AI/ML & Software Development"
+    />
+    <meta
+      name="description"
+      content="B.Tech AIML student at DRK Institute of Science and Technology with practical experience in machine learning, data analytics, and Python development."
+    />
+    <meta name="author" content="Rampally Neeraj Chary" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Rampally Neeraj Chary | AI/ML & Software Development"
+    />
+    <meta
+      property="og:description"
+      content="B.Tech AIML student at DRK Institute of Science and Technology with practical experience in machine learning, data analytics, and Python development."
+    />
+    <!-- TODO: Add production URL e.g. <meta property="og:url" content="https://yourdomain.com" /> -->
+    <!-- TODO: Add production social preview image e.g. <meta property="og:image" content="https://yourdomain.com/og-image.jpg" /> -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rampally Neeraj Chary | AI/ML & Software Development"
+    />
+    <meta
+      name="twitter:description"
+      content="B.Tech AIML student at DRK Institute of Science and Technology with practical experience in machine learning, data analytics, and Python development."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Initialization Script (prevents theme flash on initial paint) -->
+    <script>
+      (function () {
+        try {
+          const storedTheme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = storedTheme ? storedTheme : (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

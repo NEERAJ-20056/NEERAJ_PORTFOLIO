@@ -1,0 +1,105 @@
+/* Education Section */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: 100%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-entry-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.education-trigger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.25rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: var(--text-sm);
+  text-align: left;
+  cursor: pointer;
+  min-height: 50px;
+  box-shadow: var(--shadow-subtle);
+  transition: border-color var(--duration-fast) var(--ease-out),
+              background-color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out),
+              box-shadow var(--duration-fast) var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .education-trigger-btn:hover {
+    border-color: var(--color-accent);
+    background-color: var(--color-surface-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card);
+  }
+}
+
+.education-trigger-btn:active {
+  transform: scale(0.98);
+}
+
+.education-trigger-btn.is-active {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+}
+
+.edu-trigger-info {
+  flex-grow: 1;
+  padding-right: var(--space-3);
+}
+
+.edu-trigger-heading {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.edu-trigger-summary {
+  color: var(--color-text-secondary);
+}
+
+.edu-trigger-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+  transition: transform var(--duration-base) var(--ease-out);
+  transform-origin: center;
+}
+
+.education-trigger-btn.is-active .edu-trigger-indicator {
+  transform: rotate(45deg);
+}
+
+.education-detail-panel {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edu-detail-text {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .education-trigger-btn,
+  .edu-trigger-indicator {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}

@@ -1,0 +1,31 @@
+/* About Section */
+.about-content-wrapper {
+  max-width: 65ch;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.about-intro-text {
+  font-size: var(--text-base);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.about-action-row {
+  margin-top: var(--space-4);
+  display: flex;
+  justify-content: center;
+}
+
+.about-more-text {
+  font-size: var(--text-base);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+  text-align: left;
+}
